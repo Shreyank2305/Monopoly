@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Starting Amount"
+            android:gravity="center"
+            android:textColor="#3F51B5"
+            />
+        <EditText
+            android:id="@+id/startamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:textColorHint="#C5CAE9"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="amount"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+            android:text="No of palyers"/>
+        <Spinner
+            android:id="@+id/numberofplayers"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Spinner>
+        <!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:textColorHint="#C5CAE9"
+            android:gravity="center"
+
+            android:hint="1/2/3/4/5/6"/>
+        -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+
+            android:text="units"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:textColorHint="#C5CAE9"
+            android:gravity="center"
+
+            android:hint="h/tk/m/b"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+
+            android:text="Joining code"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+
+            android:textColorHint="#C5CAE9"
+            android:hint="anything"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="create"
+        android:onClick="createnewgame"
+        android:background="#3F51B5"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>
